@@ -1,29 +1,34 @@
 
 Objective
+
 Predictive models built to predict the median price based on features such as Crime rate and Number of rooms etc. and identified the highest performing model based on specific evaluation metrics: Adjusted R-squared (Adj-R2) and Mean Squared Error (MSE).
 
 Summary
+
 The Boston dataset was used to predict the median price based on features such as Crime rate and Number of rooms etc. and identified the highest performing model based on specific evaluation metrics: Adjusted R-squared (Adj-R2) and Mean Squared Error (MSE). The Adj-R2 measures the goodness of fit of the model adjusted for the number of predictors while the MSE is an error measure where the squared error for each data point is calculated and summed across all the datapoints and a mean value is calculated. Error is the difference between the actual and predicted value. 
 
 The standard Machine Learning Model building pipeline (as noted below) was used. The six distinct models (however over eight in total given sub-setting of features) varied in terms of complexity with the simplest model being the Linear Regression Model, then Penalized Linear Regression, Polynomial Linear Regression, Polynomial Penalized Linear Regression, Decision Trees, Random Forest. Finally, the model complexity peaked at an ensemble model called Gradient Boosted Machine. Note that a subset of features were used for some models and or the entire set of features.
  
-Top Performer – Gradient Boosted Machine (MSE: 11.144 and Adj-R2: 0.867) where all features were used.
- 2nd Top – Polynomial Penalized (Lasso) Linear Regression (MSE: 12.818 & Adj-R2: 0.83). 
+Top Performer
+– Gradient Boosted Machine (MSE: 11.144 and Adj-R2: 0.867) where all features were used.
+
+2nd Top 
+– Polynomial Penalized (Lasso) Linear Regression (MSE: 12.818 & Adj-R2: 0.83). 
 
 Note that if interpretability was a high priority then I recommended choosing the 2nd Top performer (Lasso Regression -Polynomial using all features) since Gradient Boosted Machines (similar to other ensemble models) are much harder to explain the basis for the predictions. 
 
 
 The six distinct machine learning models which applied regression techniques and were evaluated were:
-Linear Regression 
-          - using subset of features
+1. Linear Regression 
+   - using subset of features
 
 2. Polynomial Linear Regression
-          - using subset of features
+   - using subset of features
 
 3. Penalized Linear Regression - Lasso Regression
-          - using subset of features
-          - using all features
-          - using polynomial transformation on all features
+   - using subset of features
+   - using all features
+   - using polynomial transformation on all features
 
 4. Decision Regression Tree
 
