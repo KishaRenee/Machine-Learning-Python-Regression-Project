@@ -35,7 +35,9 @@ The six distinct machine learning models which applied regression techniques and
 4. Decision Regression Tree
 
 Ensemble Models :
+
 5. Random Forest
+
 6. Gradient Boosted Tree
 
 (i)	Linear Regression
